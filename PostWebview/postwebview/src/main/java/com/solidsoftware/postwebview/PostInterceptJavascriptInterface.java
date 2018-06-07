@@ -1,15 +1,17 @@
-package org.solidsoftware.postwebview;
+package com.solidsoftware.postwebview;
 
 import android.content.Context;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
+
+import com.solidsoftware.postwebview.IOUtils;
 
 import org.jsoup.Jsoup;
 
 import java.io.IOException;
 
 public class PostInterceptJavascriptInterface {
-    public static final String TAG = "PostInterceptJavascriptInterface";
+    public static final String TAG = "JavascriptInterface";
 
     private static String mInterceptHeader = null;
     private InterceptingWebViewClient mWebViewClient = null;

@@ -1,4 +1,4 @@
-package org.solidsoftware.postwebview;
+package com.solidsoftware.postwebview;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -24,7 +24,7 @@ import java.net.URL;
 import java.nio.charset.Charset;
 
 public class InterceptingWebViewClient extends WebViewClient {
-    public static final String TAG = "InterceptingWebViewClient";
+    public static final String TAG = "WebViewClient";
 
     private Context mContext = null;
     private WebView mWebView = null;

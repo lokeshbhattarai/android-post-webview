@@ -3,37 +3,36 @@
     android:id="@+id/container"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context="org.solidsoftware.postwebview.MainActivity"
-    tools:ignore="MergeRootFrame"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    tools:ignore="MergeRootFrame">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Button
+            android:id="@+id/go_button"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Go"
-            android:id="@+id/go_button"
-            android:onClick="buttonClicked"
-            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentTop="true"
+            android:onClick="buttonClicked"
+            android:text="Go" />
 
         <!-- Change android text below to "http://www.w3schools.com/ajax/default.ASP" to test AJAX -->
         <EditText
+            android:id="@+id/addressView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/go_button"
-            android:text="http://cgi-lib.berkeley.edu/ex/simple-form.html"
-            android:id="@+id/addressView"
-            android:layout_centerVertical="true" />
+            android:text="http://cgi-lib.berkeley.edu/ex/simple-form.html" />
     </RelativeLayout>
 
     <WebView
+        android:id="@+id/webView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/webView" />
+        android:layout_height="match_parent" />
 </LinearLayout>

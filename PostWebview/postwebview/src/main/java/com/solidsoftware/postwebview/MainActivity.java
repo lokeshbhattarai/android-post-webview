@@ -1,9 +1,9 @@
-package org.solidsoftware.postwebview;
+package com.solidsoftware.postwebview;
 
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,7 +13,9 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.EditText;
 
-public class MainActivity extends ActionBarActivity {
+import org.solidsoftware.postwebview.R;
+
+public class MainActivity extends AppCompatActivity {
 
     private EditText mAddressView = null;
     private WebView mWebView = null;
